@@ -25,20 +25,30 @@ jobs:
 
     - name: Download Godot Export Templates
       run: |
-        mkdir -p ~/Library/Application\ Support/Godot/templates/4.4.1.stable
-        cd ~/Library/Application\ Support/Godot/templates/4.4.1.stable
+        mkdir -p ~/Library/Application\ Support/Godot/export_templates/4.4.1.stable
+        echo 1
+        cd ~/Library/Application\ Support/Godot/export_templates/4.4.1.stable
+        echo 2
+        ls
+        echo 3
         wget https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_export_templates.tpz
-        tar -xzf Godot_v4.4.1-stable_export_templates.tpz -C ~/Library/Application\ Support/Godot/templates/4.4.1.stable
+        echo 4
+        tar -xzf Godot_v4.4.1-stable_export_templates.tpz -C ~/Library/Application\ Support/Godot/export_templates/4.4.1.stable
+        ls
+        echo 5
         cd templates
+        echo 6
         mv * ..
+        echo 7
         cd ..
+        echo 8
         ls
 
     - name: Create build directory
       run: mkdir -p build
 
     - name: Export iOS project
-      run: godot --export-release "iOS" build/your_project_name.xcodeproj
+      run: godot --headless --export-release "iOS" build/your_project_name.xcodeproj
       env:
         DISPLAY: :99.0
         
