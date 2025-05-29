@@ -1,0 +1,56 @@
+GDRE Tools v0.9.0-beta.4
+Windows 10.0.26120, NVIDIA GeForce RTX 4060, opengl3
+Opening file: C:/Users/trfow/OneDrive/Desktop/average_platformer.exe
+WARNING: Duplicate ID found in cache: 7467102795091281710 -> res://assets/maps/1_5.tscn
+Replacing with: res://assets/maps/1_6.tscn
+   at: GDRESettings::load_pack_uid_cache (modules\gdsdecomp\utility\gdre_settings.cpp:1608)
+WARNING: Duplicate ID found in cache: 3646908075854000540 -> res://assets/maps/1_3.tscn
+Replacing with: res://assets/maps/1_4.tscn
+   at: GDRESettings::load_pack_uid_cache (modules\gdsdecomp\utility\gdre_settings.cpp:1608)
+Verified 389 files, no errors detected!
+Extracted 389 files, no errors detected!
+WARNING: Converting lossy imports, you may lose fidelity for indicated assets when re-importing upon loading the project
+   at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:241)
+Script version 4.3.0-stable (rev 0x77af6ca) detected
+Exporting resources in parallel...
+Saved project config project.godot.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     24
+Failed scripts:                         0
+Imported resources for export session:  168
+Successfully converted:                 168
+Lossy:                                  4
+Rewrote metadata:                       48
+Non-importable conversions:             2
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+The following files were converted from an import that was stored lossy.
+You may lose fidelity when re-importing these files upon loading the project.
+res://.godot/imported/coin.wav-828352c8d1a7c1b294312f06e5cd77f4.sample to res://assets/sound/coin.wav
+res://.godot/imported/die.wav-af49befee86f5f5679b0a4fd52759971.sample to res://assets/sound/die.wav
+res://.godot/imported/land.wav-722b9c4a506a9e3138c75c0d4cedf191.sample to res://assets/sound/land.wav
+res://.godot/imported/win_crown.wav-1c8c62a3a7a53d9b108ea869115d6bd0.sample to res://assets/sound/win_crown.wav
+------
+
+The following files were converted and saved to a non-original path, but did not have their import data rewritten.
+These files will not be re-imported when loading the project.
+res://.godot/imported/touchscreen_button_bitmap.bmp-95881cb7d729c3e0d60416d9ddd87f65.ctex to res://.assets/assets/sprites/touchscreen_button_bitmap.png
+res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex to res://.assets/icon.png
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.4.0 to edit the project.
+Note: the project may be using a custom version of Godot. Detection for this has not been implemented yet.
+If you find that you have many non-import errors upon opening the project 
+(i.e. scripts or shaders have many errors), use the original game's binary as the export template.
+
+*******************************************************************************
+

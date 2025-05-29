@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=4 uid="uid://j0e5pq7s3yoj"]
+
+[ext_resource type="Texture2D" uid="uid://drdjx4lhiqtyp" path="res://assets/sprites/spike_shadow.png" id="1"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_74rkh"]
+size = Vector3(20, 20, 1)
+
+[sub_resource type="Gradient" id="Gradient_74rkh"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_7tuoy"]
+gradient = SubResource("Gradient_74rkh")
+width = 20
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_guvhq"]
+size = Vector2(20, 10)
+
+[node name="Block" type="StaticBody2D"]
+
+[node name="Shadow" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 0.498039)
+z_as_relative = false
+position = Vector2(2, -3)
+scale = Vector2(20, 10)
+texture = ExtResource("1")
+region_enabled = true
+region_rect = Rect2(9, 0, 1, 1)
+
+[node name="Mesh" type="MeshInstance2D" parent="."]
+position = Vector2(0, -5)
+scale = Vector2(1, 0.5)
+mesh = SubResource("BoxMesh_74rkh")
+texture = SubResource("GradientTexture1D_7tuoy")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+shape = SubResource("RectangleShape2D_guvhq")
+debug_color = Color(1, 1, 1, 0)

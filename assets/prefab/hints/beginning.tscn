@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=4 uid="uid://ciisxvjkt23uw"]
+
+[ext_resource type="FontFile" uid="uid://b8j5a7xsny1ed" path="res://assets/font.ttf" id="1"]
+
+[node name="Move" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Shadow" type="Label" parent="."]
+modulate = Color(0, 0, 0, 0.498039)
+layout_mode = 0
+offset_left = -130.0
+offset_top = -4.0
+offset_right = 152.0
+offset_bottom = 14.0
+pivot_offset = Vector2(59, 9)
+theme_override_fonts/font = ExtResource("1")
+theme_override_font_sizes/font_size = 16
+text = "Press left and right arrows / A and D to move"
+
+[node name="DashText" type="Label" parent="."]
+layout_mode = 0
+offset_left = -132.0
+offset_top = -6.0
+offset_right = 150.0
+offset_bottom = 12.0
+pivot_offset = Vector2(59, 9)
+theme_override_fonts/font = ExtResource("1")
+theme_override_font_sizes/font_size = 16
+text = "Press left and right arrows / A and D to move"

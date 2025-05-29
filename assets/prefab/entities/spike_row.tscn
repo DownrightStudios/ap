@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=4 uid="uid://6yxhqp421i7q"]
+
+[ext_resource type="PackedScene" uid="uid://cgov5y05xdngw" path="res://assets/prefab/entities/spike.tscn" id="1"]
+
+[node name="SpikeRow" type="Node2D"]
+
+[node name="Spike" parent="." instance=ExtResource("1")]
+
+[node name="Spike2" parent="." instance=ExtResource("1")]
+position = Vector2(21, 1)
+
+[node name="Spike3" parent="." instance=ExtResource("1")]
+position = Vector2(41, 1)
+
+[node name="Spike4" parent="." instance=ExtResource("1")]
+position = Vector2(61, 1)

@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=4 uid="uid://b2r75ki7a8r65"]
+
+[ext_resource type="Script" uid="uid://doim5iivf35h2" path="res://scripts/level_map.gd" id="1"]
+[ext_resource type="TileSet" uid="uid://b35yqowia6l8t" path="res://assets/prefab/level.tres" id="2"]
+[ext_resource type="PackedScene" uid="uid://d2vw35iuepppj" path="res://assets/prefab/entities/win_crown.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://dclx7lmka11h2" path="res://assets/prefab/player.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://8o5a6v1bjrch" path="res://assets/prefab/checkpoint.tscn" id="5"]
+
+[node name="Level1-5" type="Node"]
+script = ExtResource("1")
+bg_color = Color(0.2112, 0.64, 0.3184, 1)
+next_world = 3
+
+[node name="FG" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAEAPv/AAAAAAAAAQAEAPz/AAAAAAAAAQAEAP3/AAAAAAAAAQAEAAIAAAAAAAAAAQAEAAEAAAAAAAAAAQAEAAAAAAAAAAAAAQAEAP//AAAAAAAAAQAEAP7/AAAAAAAAAQD7//v/AAAAAAAAAQD7//z/AAAAAAAAAQD7//3/AAAAAAAAAQD7//7/AAAAAAAAAQD7////AAAAAAAAAQD7/wAAAAAAAAAAAQD7/wEAAAAAAAAAAQD7/wIAAAAAAAAAAQD+////AAAAAAAAAQD+/wAAAAAAAAAAAQD7/wQAAAAAAAAAAQD8/wQAAAAAAAAAAQD9/wQAAAAAAAAAAQD+/wQAAAAAAAAAAQD//wQAAAAAAAAAAQAAAAQAAAAAAAAAAQABAAQAAAAAAAAAAQACAAQAAAAAAAAAAQADAAQAAAAAAAAAAQAEAAQAAAAAAAAAAQAEAAMAAAAAAAAAAQD7/wMAAAAAAAAAAQD+/wEAAAAAAAAAAQD//wEAAAAAAAAAAQAAAAEAAAAAAAAAAQD8////AAAAAAAAAQD9////AAAAAAAAAQD+//7/AAAAAAAAAQD8//v/AAAAAAAAAQD9//v/AAAAAAAAAQD+//v/AAAAAAAAAQD///v/AAAAAAAAAQAAAPv/AAAAAAAAAQABAPv/AAAAAAAAAQACAPv/AAAAAAAAAQADAPv/AAAAAAAAAQD//wMAAwAAAAAAAAABAAMAAwACAAAAAAACAAMAAwAAAAAAAAAAAAAAAwACAAAAAAD+//3/AwACAAAAAAD8//7/AwABAAAAAAD9//7/AwABAAAAAAA=")
+tile_set = ExtResource("2")
+
+[node name="Entities" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAADAAMAAQAAAAAAAwD//wAAAQAAAAAAAwD9/wMAAQAAAAAAAgD+/wMAAQAAAAAAAgD//wMAAQAAAAAAAgAAAAMAAQAAAAAAAgABAAMAAQAAAAAAAgAAAAAAAQAAAAAAAgD+//3/AQAAAAAAAgA=")
+tile_set = ExtResource("2")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+enabled = false
+zoom = Vector2(2, 2)
+
+[node name="WinCrown" parent="." instance=ExtResource("3")]
+position = Vector2(-60, -40)
+
+[node name="Player" parent="." instance=ExtResource("4")]
+position = Vector2(-60, 20)
+
+[node name="Checkpoint" parent="." instance=ExtResource("5")]
+position = Vector2(-60, 50)

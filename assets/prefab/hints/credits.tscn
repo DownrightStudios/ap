@@ -1,0 +1,87 @@
+[gd_scene load_steps=3 format=4 uid="uid://0pu3yrkisj5s"]
+
+[ext_resource type="FontFile" uid="uid://b8j5a7xsny1ed" path="res://assets/font.ttf" id="1"]
+[ext_resource type="FontFile" uid="uid://d21i4ydvecj7" path="res://assets/font_light.ttf" id="2"]
+
+[node name="Welcome" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 10.0
+offset_right = 10.0
+
+[node name="Shadow" type="Label" parent="."]
+modulate = Color(0, 0, 0, 0.498039)
+layout_mode = 0
+offset_left = -58.0
+offset_top = -8.0
+offset_right = 60.0
+offset_bottom = 10.0
+pivot_offset = Vector2(59, 9)
+theme_override_fonts/font = ExtResource("1")
+theme_override_font_sizes/font_size = 16
+text = "average platformer
+
+
+-- Credits --
+
+
+
+Thanks for Playing!"
+horizontal_alignment = 1
+
+[node name="Creator" type="Label" parent="Shadow"]
+layout_mode = 0
+offset_left = -98.0
+offset_top = 14.0
+offset_right = 216.0
+offset_bottom = 107.0
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 16
+text = "by Downright Games
+
+
+
+Mason L \"FowluhhDev\" Fowler - Development and Level Design
+\"Charlie\" AllyReal - Level Design and Ideas
+
+
+"
+horizontal_alignment = 1
+
+[node name="DashText" type="Label" parent="."]
+layout_mode = 0
+offset_left = -60.0
+offset_top = -10.0
+offset_right = 58.0
+offset_bottom = 8.0
+pivot_offset = Vector2(59, 9)
+theme_override_fonts/font = ExtResource("1")
+theme_override_font_sizes/font_size = 16
+text = "average platformer
+
+
+-- Credits --
+
+
+
+Thanks for Playing!"
+horizontal_alignment = 1
+
+[node name="Creator" type="Label" parent="DashText"]
+layout_mode = 0
+offset_left = -98.0
+offset_top = 14.0
+offset_right = 216.0
+offset_bottom = 107.0
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 16
+text = "by Downright Games
+
+
+
+Mason L \"FowluhhDev\" Fowler - Development and Level Design
+\"Charlie\" AllyReal - Level Design and Ideas
+
+
+"
+horizontal_alignment = 1

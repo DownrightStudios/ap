@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=4 uid="uid://bxhg0c3v7eibf"]
+
+[ext_resource type="FontFile" uid="uid://b8j5a7xsny1ed" path="res://assets/font.ttf" id="1"]
+
+[node name="Dash" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Shadow" type="Label" parent="."]
+modulate = Color(0, 0, 0, 0.498039)
+layout_mode = 0
+offset_left = -73.0
+offset_top = -7.0
+offset_right = 95.0
+offset_bottom = 11.0
+pivot_offset = Vector2(84, 9)
+theme_override_fonts/font = ExtResource("1")
+theme_override_font_sizes/font_size = 16
+text = "Press C or L to Flip Gravity"
+
+[node name="DashText" type="Label" parent="."]
+layout_mode = 0
+offset_left = -75.0
+offset_top = -9.0
+offset_right = 93.0
+offset_bottom = 9.0
+pivot_offset = Vector2(84, 9)
+theme_override_fonts/font = ExtResource("1")
+theme_override_font_sizes/font_size = 16
+text = "Press C or L to Flip Gravity"

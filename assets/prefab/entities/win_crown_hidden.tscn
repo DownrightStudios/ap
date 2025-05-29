@@ -1,0 +1,96 @@
+[gd_scene load_steps=10 format=4 uid="uid://b4mxm0hpmyary"]
+
+[ext_resource type="Script" uid="uid://diegxgvbijdyu" path="res://scripts/win_crown.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://3frvq00vh6vj" path="res://assets/sprites/crown.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://ckgad1pmn0jbt" path="res://assets/sprites/particle_small.png" id="3"]
+
+[sub_resource type="Gradient" id="Gradient_hgsaf"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3gsa0"]
+
+[sub_resource type="Animation" id="Animation_jdnm5"]
+length = 0.0010000000474974513
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprites:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_hgsaf"]
+resource_name = "hover"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprites:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(0, 1), Vector2(0, -1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8crnl"]
+_data = {
+&"RESET": SubResource("Animation_jdnm5"),
+&"hover": SubResource("Animation_hgsaf")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ye8dl"]
+radius = 80.0
+
+[node name="WinCrown" type="Area2D" node_paths=PackedStringArray("uncover_hitbox")]
+script = ExtResource("1")
+uncoverable = true
+uncover_hitbox = NodePath("UncoverHitbox")
+
+[node name="Sprites" type="Node2D" parent="."]
+
+[node name="Shadow" type="Sprite2D" parent="Sprites"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(2, 2)
+texture = ExtResource("2")
+
+[node name="Particles" type="CPUParticles2D" parent="Sprites"]
+amount = 16
+texture = ExtResource("3")
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 20.0
+initial_velocity_max = 20.0
+scale_amount_min = 0.5
+scale_amount_max = 0.5
+color_ramp = SubResource("Gradient_hgsaf")
+
+[node name="Texture" type="Sprite2D" parent="Sprites"]
+texture = ExtResource("2")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3gsa0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_8crnl")
+}
+
+[node name="UncoverHitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UncoverHitbox"]
+shape = SubResource("CircleShape2D_ye8dl")
+
+[connection signal="body_entered" from="." to="." method="win_maybe"]
+[connection signal="body_entered" from="UncoverHitbox" to="." method="uncover_yes"]
+[connection signal="body_exited" from="UncoverHitbox" to="." method="uncover_no"]

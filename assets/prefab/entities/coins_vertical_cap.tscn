@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=4 uid="uid://nvdtfdk7v62x"]
+
+[ext_resource type="PackedScene" uid="uid://cf5pxe8i0pbv0" path="res://assets/prefab/entities/coin.tscn" id="1"]
+
+[node name="Coins" type="Node2D"]
+position = Vector2(-10, 0)
+
+[node name="Coin2" parent="." instance=ExtResource("1")]
+position = Vector2(10, 10)

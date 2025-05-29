@@ -1,0 +1,98 @@
+[gd_resource type="TileSet" load_steps=40 format=4 uid="uid://b35yqowia6l8t"]
+
+[ext_resource type="PackedScene" uid="uid://cremrgfb6a32k" path="res://assets/prefab/blocks/block.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://j0e5pq7s3yoj" path="res://assets/prefab/blocks/half_block.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://ckcgiy5q25xo4" path="res://assets/prefab/blocks/bg_half_block.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b176nweogs3ki" path="res://assets/prefab/blocks/bgblock.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://cl3xrnm1tfmcg" path="res://assets/prefab/blocks/bg_half_block_front.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://okryh0lchi2i" path="res://assets/prefab/blocks/bg_half_block_flipped.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://cp4pv6obxhsiy" path="res://assets/prefab/blocks/half_block_flipped.tscn" id="7"]
+[ext_resource type="PackedScene" uid="uid://dclx7lmka11h2" path="res://assets/prefab/player.tscn" id="8"]
+[ext_resource type="PackedScene" uid="uid://dbo5s73y53dpq" path="res://assets/prefab/entities/flipped_bounce_pad.tscn" id="9"]
+[ext_resource type="PackedScene" uid="uid://dh0hgumj2uyne" path="res://assets/prefab/entities/killbox.tscn" id="10"]
+[ext_resource type="PackedScene" uid="uid://h8kjk740ki1h" path="res://assets/prefab/entities/coins.tscn" id="11"]
+[ext_resource type="PackedScene" uid="uid://qs531jubo8th" path="res://assets/prefab/entities/coin_offgrid.tscn" id="12"]
+[ext_resource type="PackedScene" uid="uid://bephchmpxoycf" path="res://assets/prefab/entities/coins_flipped.tscn" id="13"]
+[ext_resource type="PackedScene" uid="uid://k3aqow1tf5g3" path="res://assets/prefab/entities/coins_vertical.tscn" id="14"]
+[ext_resource type="PackedScene" uid="uid://nvdtfdk7v62x" path="res://assets/prefab/entities/coins_vertical_cap.tscn" id="15"]
+[ext_resource type="PackedScene" uid="uid://8o5a6v1bjrch" path="res://assets/prefab/checkpoint.tscn" id="16"]
+[ext_resource type="PackedScene" uid="uid://cf5pxe8i0pbv0" path="res://assets/prefab/entities/coin.tscn" id="17"]
+[ext_resource type="PackedScene" uid="uid://cgov5y05xdngw" path="res://assets/prefab/entities/spike.tscn" id="18"]
+[ext_resource type="PackedScene" uid="uid://d508d01kjou8" path="res://assets/prefab/entities/half_spike.tscn" id="19"]
+[ext_resource type="PackedScene" uid="uid://d2vw35iuepppj" path="res://assets/prefab/entities/win_crown.tscn" id="20"]
+[ext_resource type="PackedScene" uid="uid://bjoon2w2lj5ws" path="res://assets/prefab/entities/bounce_pad.tscn" id="21"]
+[ext_resource type="PackedScene" uid="uid://cdxup8fmcwt4n" path="res://assets/prefab/entities/upside_down_spike.tscn" id="22"]
+[ext_resource type="PackedScene" uid="uid://cvsvrm6iig5f4" path="res://assets/prefab/entities/upside_down_half_spike.tscn" id="23"]
+[ext_resource type="PackedScene" uid="uid://6yxhqp421i7q" path="res://assets/prefab/entities/spike_row.tscn" id="24"]
+[ext_resource type="PackedScene" uid="uid://b7kbw3qslr2l1" path="res://assets/prefab/hints/dash.tscn" id="25"]
+[ext_resource type="PackedScene" uid="uid://uwsopqnnpyow" path="res://assets/prefab/hints/sparkle.tscn" id="26"]
+[ext_resource type="PackedScene" uid="uid://b7xvj04kierdo" path="res://assets/prefab/hints/double_jump.tscn" id="27"]
+[ext_resource type="PackedScene" uid="uid://bwwoyyfl7t486" path="res://assets/prefab/hints/welcome.tscn" id="28"]
+[ext_resource type="PackedScene" uid="uid://ciisxvjkt23uw" path="res://assets/prefab/hints/beginning.tscn" id="29"]
+[ext_resource type="PackedScene" uid="uid://dvyq5wb4dexfx" path="res://assets/prefab/hints/jump.tscn" id="30"]
+[ext_resource type="PackedScene" uid="uid://bvgfq5s18hc0n" path="res://assets/prefab/hints/spring.tscn" id="31"]
+[ext_resource type="PackedScene" uid="uid://0bpu2hvdjm70" path="res://assets/prefab/spring_pointer.tscn" id="32"]
+[ext_resource type="PackedScene" uid="uid://0pu3yrkisj5s" path="res://assets/prefab/hints/credits.tscn" id="33"]
+[ext_resource type="PackedScene" uid="uid://bxhg0c3v7eibf" path="res://assets/prefab/hints/flip.tscn" id="34"]
+[ext_resource type="Texture2D" uid="uid://drdukffe3jq5b" path="res://assets/sprites/remnants.png" id="35"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_y8cug"]
+resource_name = "Blocks"
+scenes/1/scene = ExtResource("1")
+scenes/2/scene = ExtResource("2")
+scenes/3/scene = ExtResource("3")
+scenes/4/scene = ExtResource("4")
+scenes/5/scene = ExtResource("5")
+scenes/6/scene = ExtResource("6")
+scenes/7/scene = ExtResource("7")
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_yn2xq"]
+resource_name = "Entities"
+scenes/1/scene = ExtResource("8")
+scenes/2/scene = ExtResource("17")
+scenes/3/scene = ExtResource("18")
+scenes/4/scene = ExtResource("19")
+scenes/5/scene = ExtResource("20")
+scenes/6/scene = ExtResource("21")
+scenes/7/scene = ExtResource("22")
+scenes/8/scene = ExtResource("23")
+scenes/9/scene = ExtResource("24")
+scenes/10/scene = ExtResource("9")
+scenes/11/scene = ExtResource("10")
+scenes/12/scene = ExtResource("11")
+scenes/13/scene = ExtResource("12")
+scenes/14/scene = ExtResource("13")
+scenes/15/scene = ExtResource("14")
+scenes/16/scene = ExtResource("15")
+scenes/17/scene = ExtResource("16")
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_rfqfn"]
+resource_name = "Text"
+scenes/1/scene = ExtResource("25")
+scenes/2/scene = ExtResource("27")
+scenes/3/scene = ExtResource("28")
+scenes/4/scene = ExtResource("29")
+scenes/5/scene = ExtResource("30")
+scenes/6/scene = ExtResource("31")
+scenes/7/scene = ExtResource("32")
+scenes/8/scene = ExtResource("33")
+scenes/9/scene = ExtResource("34")
+scenes/10/scene = ExtResource("26")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sim3f"]
+resource_name = "Remnants"
+texture = ExtResource("35")
+texture_region_size = Vector2i(20, 20)
+0:0/0 = 0
+0:0/0/script = null
+1:0/0 = 0
+1:0/0/script = null
+2:0/0 = 0
+2:0/0/script = null
+
+[resource]
+tile_size = Vector2i(20, 20)
+sources/0 = SubResource("TileSetScenesCollectionSource_y8cug")
+sources/1 = SubResource("TileSetScenesCollectionSource_yn2xq")
+sources/2 = SubResource("TileSetScenesCollectionSource_rfqfn")
+sources/3 = SubResource("TileSetAtlasSource_sim3f")

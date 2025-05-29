@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=4 uid="uid://cdxup8fmcwt4n"]
+
+[ext_resource type="Script" uid="uid://xj43jut2cbxe" path="res://scripts/spike.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://drdjx4lhiqtyp" path="res://assets/sprites/spike_shadow.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://4kfpkpb46nrc" path="res://assets/sprites/spike.png" id="3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_78ipo"]
+size = Vector2(4, 8)
+
+[node name="Spike" type="Area2D"]
+position = Vector2(1, 1)
+script = ExtResource("1")
+
+[node name="Shadow" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 0.498039)
+z_as_relative = false
+rotation = 3.141590118408203
+texture = ExtResource("2")
+
+[node name="Texture" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(-2, -2)
+rotation = 3.141590118408203
+texture = ExtResource("3")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -5)
+shape = SubResource("RectangleShape2D_78ipo")
+
+[connection signal="body_entered" from="." to="." method="check_player"]

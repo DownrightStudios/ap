@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://coo67ixdw136s"
+path="res://.godot/imported/touchscreen_button_bitmap.bmp-95881cb7d729c3e0d60416d9ddd87f65.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/sprites/touchscreen_button_bitmap.bmp"
+dest_files=["res://.godot/imported/touchscreen_button_bitmap.bmp-95881cb7d729c3e0d60416d9ddd87f65.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,67 @@
+[gd_scene load_steps=8 format=4 uid="uid://uwsopqnnpyow"]
+
+[ext_resource type="Texture2D" uid="uid://cxvl2nbk2p5p5" path="res://assets/sprites/sparkle.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0vnm"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40w6e"]
+atlas = ExtResource("1")
+region = Rect2(10, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dccxb"]
+atlas = ExtResource("1")
+region = Rect2(20, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjduy"]
+atlas = ExtResource("1")
+region = Rect2(30, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dubyd"]
+atlas = ExtResource("1")
+region = Rect2(40, 0, 10, 10)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kwqc0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0vnm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40w6e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dccxb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tjduy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dubyd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dubyd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dubyd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dubyd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dubyd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dubyd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+position = Vector2(10, 10)
+sprite_frames = SubResource("SpriteFrames_kwqc0")
+autoplay = "default"
+frame = 2

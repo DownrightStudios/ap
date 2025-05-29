@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=4 uid="uid://hh4n5kn44vij"]
+
+[ext_resource type="Script" uid="uid://bmnjft5f00byp" path="res://scripts/music.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://dy3uwkbgvsssl" path="res://assets/sound/bg.ogg" id="2"]
+[ext_resource type="AudioStream" uid="uid://fvl5dpigrclx" path="res://assets/sound/die.wav" id="3"]
+[ext_resource type="AudioStream" uid="uid://ml612t4xenqb" path="res://assets/sound/coin.wav" id="4"]
+[ext_resource type="AudioStream" uid="uid://lj247lmdy41x" path="res://assets/sound/win_crown.wav" id="5"]
+
+[node name="Music" type="Node"]
+script = ExtResource("1")
+
+[node name="Noise" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2")
+autoplay = true
+parameters/looping = true
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3")
+
+[node name="CoinSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4")
+
+[node name="LandSound" type="AudioStreamPlayer" parent="."]
+
+[node name="WinSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5")
