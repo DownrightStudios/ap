@@ -1,6 +1,6 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1748555763
-export_presets.cfg::TextFile::-1::1748554878::0::1::::<><><>0<>0<><>::
+::res://::1748555878
+export_presets.cfg::TextFile::-1::1748555780::0::1::::<><><>0<>0<><>::
 gdre_export.log::TextFile/TextFile::-1::1748554399::0::1::::<><><>0<>0<><>::
 ::res://art/::1748554453
 logo.png::CompressedTexture2D/CompressedTexture2D::4379892873306213532::1748554399::1748554453::1::::<><><>0<>0<>d00eeaf47465b42b494a4c56490d7fdd<>res://.godot/imported/logo.png-b31b2ea6758d8cc9ccd6d1a1783e6877.ctex::
@@ -175,8 +175,8 @@ spring.png::CompressedTexture2D/CompressedTexture2D::1117635102709650785::174855
 spring_pointer.png::CompressedTexture2D/CompressedTexture2D::1624967722467623501::1748554399::1748554453::1::::<><><>0<>0<>9b2390454b15ffe114c8e7455a627038<>res://.godot/imported/spring_pointer.png-c3b90f5e249c776cff8ebd1d17660a82.ctex::
 touchscreen_button.png::CompressedTexture2D/CompressedTexture2D::770439457947078719::1748554399::1748554453::1::::<><><>0<>0<>05f8b955e95843c6d4245ed60cad478c<>res://.godot/imported/touchscreen_button.png-e6b77367098ff56644a69c839494c812.ctex::
 touchscreen_button_pressed.png::CompressedTexture2D/CompressedTexture2D::3490872352784376790::1748554399::1748554453::1::::<><><>0<>0<>ca5b774b36b55cd613ca1d054d6ac331<>res://.godot/imported/touchscreen_button_pressed.png-60e698ccbef8ba10cfa6395a996b0349.ctex::
-::res://scenes/::1748554462
-level.tscn::PackedScene::1663254961492649499::1748554462::0::1::::<><><>0<>0<><>::uid://dq8kx6pisjba7::::res://scripts/level.gd<>uid://vk41mwv31tt8::::res://assets/sprites/bg_grid_single.png<>uid://dcmhfhy4luh8q::::res://scripts/game_camera.gd<>uid://cp2n60538gq3t::::res://assets/sprites/particle.png<>uid://bfubaic1vqc52::::res://assets/prefab/hud.tscn
+::res://scenes/::1748555785
+level.tscn::PackedScene::1663254961492649499::1748555785::0::1::::<><><>0<>0<><>::uid://dq8kx6pisjba7::::res://scripts/level.gd<>uid://vk41mwv31tt8::::res://assets/sprites/bg_grid_single.png<>uid://dcmhfhy4luh8q::::res://scripts/game_camera.gd<>uid://cp2n60538gq3t::::res://assets/sprites/particle.png<>uid://bfubaic1vqc52::::res://assets/prefab/hud.tscn
 main_menu.tscn::PackedScene/PackedScene::8969394125864137794::1748554399::0::1::::<><><>0<>0<><>::uid://bscjm5awqpkxl::::res://scripts/main_menu.gd<>uid://bwwoyyfl7t486::::res://assets/prefab/hints/welcome.tscn<>uid://d21i4ydvecj7::::res://assets/font_light.ttf
 ::res://scenes/excluded/::1748554421
 boss_test.tscn::PackedScene/PackedScene::2385653168117983905::1748554399::0::1::::<><><>0<>0<><>::uid://b35yqowia6l8t::::res://assets/prefab/level.tres<>uid://ciellkkhlgyff::::res://assets/sprites/boss.png
